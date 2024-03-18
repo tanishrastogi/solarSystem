@@ -3,6 +3,10 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
 
 
 // import starsTexture from '../img/stars1.png';
+
+
+
+
 import starsTexture from '../img/stars.jpg';
 import sunTexture from '../img/sun.jpg';
 import mercuryTexture from '../img/mercury.jpg';
@@ -50,7 +54,6 @@ const ambientLight = new THREE.AmbientLight(0x333333);
 scene.add(ambientLight);
 const pointLight = new THREE.PointLight(0xFFFFFF , 2 , 10000);
 scene.add(pointLight);
-
 
 const cubeTextureLoader = new THREE.CubeTextureLoader();
 scene.background = cubeTextureLoader.load([
@@ -161,6 +164,9 @@ saturnRing.position.x = 2695;
 saturnRing.rotation.x = -0.4 * Math.PI
 
 
+
+
+
 //uranus
 const uranusObj = new THREE.Object3D();
 scene.add(uranusObj);
@@ -182,6 +188,10 @@ const uranusRing = new THREE.Mesh(uranusRingGeo , uranusRingMat);
 uranusObj.add(uranusRing);
 uranusRing.position.x = 3500;
 uranusRing.rotation.x = -0.35 * Math.PI
+
+
+
+
 
 
 
